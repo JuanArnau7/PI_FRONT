@@ -8,7 +8,7 @@ function Paginado({recipes}){
 
         <div>
                 <div className='CardContainer'> 
-            {mapeable && mapeable.map((r,i) =>(
+            {mapeable && mapeable?.map((r,i) =>(
                         <Card key= {i}
                         id = {r.idApi}
                         name = {r.name}
