@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import store from './redux/store';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:3001';
+// axios.defaults.baseURL = 'http://localhost:3001';
 axios.defaults.baseURL = 'https://piback-production-1473.up.railway.app/';
 ReactDOM.render(
   <Provider store={store}>
