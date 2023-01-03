@@ -1,0 +1,18 @@
+
+.divisor{
+    margin: 15px;
+}
+.botones-container{
+    font-size: x-large;
+    margin: 1px;
+    height: 40px;
+    width: 50px;
+    border-radius: 10px;
+    
+}
+.botones-container:hover{
+    background-color: cornsilk;
+} 
+.botones-container:focus{ 
+    background-color: cornsilk ;
+}

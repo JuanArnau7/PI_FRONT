@@ -1,0 +1,33 @@
+.botones{
+    border-radius: 15px;
+    border: solid brown;
+    background-color: brown;
+    height: 40px;
+    width: 200px;
+    font-size: large;
+}
+
+.buttonordercontainer{
+    /* margin: 30px; */
+    /* padding: 30px; */
+    margin-inline: 20px;
+    border: solid rgb(22, 196, 240);
+}
+
+.titulo-filtro{
+    color: rgb(43, 0, 0);
+    margin: 10px;
+    /* height: 300px; */
+    background-color: rgba(171, 215, 246, 0.565);
+    border-radius: 1rem;
+
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro-dieta{
+    /* margin: 30px; */
+    padding: 30px;
+
+}

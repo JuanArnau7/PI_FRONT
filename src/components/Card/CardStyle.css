@@ -1,0 +1,36 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 600px;
+    width: 610px ;
+    margin: auto;
+    background-color: rgba(138, 134, 134, 0.624);
+    border-radius: 2.5rem;
+    margin: 7px;
+
+}
+.ImagenC{
+    width: 400px;
+    height: 300px;
+    border: solid brown;
+    border-radius: 15px;
+    margin: 10px;
+}
+.boton-detalle{
+    background-color: rgba(165, 42, 42, 0.76);
+    font-size: x-large;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+.boton-detalle:hover{
+    background-color: brown;
+}
+.titulo{
+    font-size: x-large;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}

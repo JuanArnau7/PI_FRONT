@@ -1,0 +1,55 @@
+
+.detail {
+    display: flex;
+    padding: 0%;
+    text-align: center; 
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background-image: url('../../images/fondoDetalle1.png');
+    background-size: cover;
+    margin-bottom: 0;
+    
+}
+h1{
+    color: rgb(186, 213, 236);
+}
+.name-container{
+    color: rgb(67, 235, 67);
+}
+.types-container{
+    color: yellowgreen;
+    font-size: large;
+}
+.diets-container{
+    color: yellowgreen;
+    font-size: large;
+}
+.imagen{
+    border: solid 3px brown;
+    border-radius: 15px;
+}
+.summary-container{
+    margin-left: 400px;
+    color: rgb(67, 235, 67);
+}
+
+.healthScore-container{
+    color: burlywood;
+    font-family: "brush scrit mt";
+    font-size: xx-large;
+}
+
+.pasos-container{
+    color: rgb(67, 235, 67);
+    margin-left: 500px;
+}
+
+.b-back{
+    color: black;
+    background-color: brown ;
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+    cursor: pointer;
+}
