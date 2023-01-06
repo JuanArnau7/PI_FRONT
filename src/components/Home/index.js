@@ -36,7 +36,7 @@ function Home() {
 
         <div className='Container'>
             <br></br>
-            <span> Developed by <a href='https://github.com/JuanArnau7'>JuanArnau7</a></span>
+            <span> Developed by <a href='https://www.linkedin.com/in/juan-pablo-arnau-aba418233/'>JuanArnau7</a></span>
             <br></br>
             <SearchBar/> 
             <div className='buttonFormCreacion'>
@@ -58,7 +58,7 @@ function Home() {
                     <PaginadoBot totalRecipes={recipes.length} paginate={paginate}></PaginadoBot>
                 </div>
             </div>
-            <span> Developed by <a href='https://github.com/JuanArnau7'>JuanArnau7</a></span>
+            <span> Developed by <a href='https://www.linkedin.com/in/juan-pablo-arnau-aba418233/'>JuanArnau7</a></span>
         <br></br>
         </div>
     )    
