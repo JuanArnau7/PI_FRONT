@@ -8,7 +8,7 @@ import store from './redux/store';
 import axios from 'axios';
 
 // axios.defaults.baseURL = 'http://localhost:3001';
-axios.defaults.baseURL = 'https://piback-production-c83a.up.railway.app';
+axios.defaults.baseURL = 'https://piback-production-b28c.up.railway.app';
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
