@@ -40,7 +40,7 @@ const Filtrado = ({setCurrentPage, setOrder}) => {
     return (
         <div className='buttonordercontainer'>
             <div className="filtro-dieta">
-            <h2 className="titulo-filtro"><u>tipo de dieta:</u></h2>
+            <h2 className="titulo-filtro">tipo de dieta:</h2>
                 <select className='botones' onChange={handlerOrderDiet}>
                     
                     <option key="-1" value={-1} disabled>Ordenar por Dietas</option>
@@ -51,7 +51,7 @@ const Filtrado = ({setCurrentPage, setOrder}) => {
             </div>
 
             <div className="filtro-dieta">
-                <h2 className="titulo-filtro"><u>orden Alfabetico:</u></h2>
+                <h2 className="titulo-filtro">orden Alfabetico:</h2>
                 <select  className='botones' onChange={handleOrdenName} name="ordenarAlfabeticamente">
                     <option  key="-1" value={-1} disabled>Orden Alfabetico</option>
                     <option key="0" value="up" >Ascendente: A-Z</option>
@@ -60,7 +60,7 @@ const Filtrado = ({setCurrentPage, setOrder}) => {
             </div>
 
             <div className="filtro-dieta">
-                <h2 className="titulo-filtro"><u>Indice de salud:</u></h2> 
+                <h2 className="titulo-filtro">Indice de salud:</h2> 
                 <select className='botones' onChange={handlerScoreHealth}>
                     <option key="-1" value={-1} disabled>Orden Score Health</option>
                     <option key="0" value="Descendente">Descendente</option>

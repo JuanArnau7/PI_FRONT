@@ -29,7 +29,7 @@ function SearchBar () {
         }
     }
     return (
-        <div>
+        <div className="searchbarContainer">
             <input className="inputAutocompletado" 
             value={name}
             type="text" 
@@ -45,11 +45,11 @@ function SearchBar () {
             
             </button>
             
-            <ul>
+            {/* <ul>
                 {nCompleto.map((r,i)=>
                     <p className='autocompletado' hidden={ocul} key={i}>{i<3&&r.name}</p>
                 )}
-            </ul>
+            </ul> */}
             
             
         </div>

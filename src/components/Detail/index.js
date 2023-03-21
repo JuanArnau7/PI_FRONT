@@ -17,32 +17,37 @@ function Detalle () {
     return (
         <body className="detail">
 
-        <div className="detailContainer" id="root">
+        <div className="detailContainer" >
         
-            <h1 color="white"><u><b>Detalle:</b></u></h1>
-            <div className="name-container">
-                <h3><u>{infoRecipes.name}</u></h3>
-            </div>
             <div className="img-container">
                 <img className="imagen" src={infoRecipes.image} alt='imagen'/>
             </div>
-            <div className="types-container">
-                <p><strong><u>Tipo/s de plato:</u> "{infoRecipes.types}"</strong></p>
+            <div className="contenedor-de-texto">
+                <div className="name-container">
+                    <h1><u>{infoRecipes.name}</u></h1>
+                </div>
+                <div className="types-container">
+                    <h3><u>Tipo/s de plato:</u></h3>
+                    <p><strong>"{infoRecipes.types + " "}"</strong></p>
+                </div>
+                <div className="diets-container">
+                    <h3><u>Tipo/s de dieta:</u></h3>
+                    <p>{infoRecipes.diets + " "}</p>
+                </div>
+                <div className="summary-container">
+                    <h3><u><strong>Resumen del plato:</strong></u></h3>
+                    <p dangerouslySetInnerHTML={{__html: infoRecipes.summary}}/>
+                </div>
+                <div className="healthScore-container">
+                    <h3><u><strong>Health Score:</strong></u></h3>
+                    <p>{infoRecipes.healthScore}/100</p>
+                </div>
+                <div className="pasos-container">
+                    <h3><u>Pasos para la elaboración:</u></h3>
+                    <p dangerouslySetInnerHTML={{__html: infoRecipes.steps}}/>
+                </div>
             </div>
-            <div className="diets-container">
-                <p><u>Tipo/s de dieta:</u> {infoRecipes.diets}</p>
-            </div>
-            <div className="summary-container">
-                <p><u><strong>Resumen del plato:</strong></u></p>
-                <p dangerouslySetInnerHTML={{__html: infoRecipes.summary}}/>
-            </div>
-            <div className="healthScore-container">
-                <p><u><strong>Health Score:</strong></u> {infoRecipes.healthScore}</p>
-            </div>
-            <div className="pasos-container">
-                <p><u>Pasos para la elaboración:</u></p>
-                <p dangerouslySetInnerHTML={{__html: infoRecipes.steps}}/>
-            </div>
+
         <Link to="/home">
             <button className="b-back">Back to Home</button>
         </Link>

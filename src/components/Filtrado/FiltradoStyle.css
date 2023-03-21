@@ -5,29 +5,26 @@
     height: 40px;
     width: 200px;
     font-size: large;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.buttonordercontainer{
-    /* margin: 30px; */
-    /* padding: 30px; */
-    margin-inline: 20px;
-    border: solid rgb(22, 196, 240);
-}
-
 .titulo-filtro{
-    color: rgb(43, 0, 0);
-    margin: 10px;
-    /* height: 300px; */
-    background-color: rgba(171, 215, 246, 0.565);
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 7px;
+    background-color: rgba(171, 215, 246, 0.8);
     border-radius: 1rem;
-
-    width: 200px;
+    width: fit-content;
     justify-content: center;
     align-items: center;
+    font-size: 21px ;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
-
 .filtro-dieta{
-    /* margin: 30px; */
-    padding: 30px;
+    padding: 10px;
+    margin: 5px;
 
 }

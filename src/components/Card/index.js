@@ -6,14 +6,13 @@ function Card ({ name, id, image, dieta}) {
     
     return (
         <div className="card">
-            <h2 className="titulo"><u>Titulo del plato:</u> 
-            <br></br>
-            {name}</h2>
+            <div className="titulo">
+                <h2><u>{name}</u></h2>
+            </div>
             <img src={image} alt="imagen" className="ImagenC"/>
-            <p><b>Dieta: {dieta}</b></p>
-            <br></br>
+            <p>Dietas: {dieta.map(p => p +" ")} </p>
             <Link to={`/detail/${id}`}>
-                <button className="boton-detalle"><u>DETALLE</u></button>
+                <button className="boton-detalle"><u>Más información...</u></button>
             </Link>
         </div>
         )

@@ -15,7 +15,6 @@ function Home() {
 
     const [currentPage, setCurrentPage] = useState(1);
     const [order, setOrder] = useState('')
-    console.log(order)
     useEffect(()=>{
         dispatch(getRecipesAll())        
     },[dispatch])
@@ -35,21 +34,16 @@ function Home() {
     return (
 
         <div className='Container'>
-            <br></br>
-            <span> Developed by <a href='https://www.linkedin.com/in/juan-pablo-arnau-aba418233/'>JuanArnau7</a></span>
-            <br></br>
             <SearchBar/> 
             <div className='buttonFormCreacion'>
                 <Link to='/create'>
                     <button className='boton-Formulario'>Formulario de Creación</button>
                 </Link>
             </div>
-            <br></br>
             <div className='Botones-Filtrado'>
                 <Filtrado recipes={currentRecipe} setOrder={setOrder} setCurrentPage={setCurrentPage}></Filtrado>
             </div>
             <div>
-                <br></br>
                 <div className='botones-paginado'>
                     <PaginadoBot totalRecipes={recipes.length} paginate={paginate}></PaginadoBot>
                 </div>
@@ -58,7 +52,9 @@ function Home() {
                     <PaginadoBot totalRecipes={recipes.length} paginate={paginate}></PaginadoBot>
                 </div>
             </div>
-            <span> Developed by <a href='https://www.linkedin.com/in/juan-pablo-arnau-aba418233/'>JuanArnau7</a></span>
+            <footer>
+                <p className='futer'>Developed by <a href='https://www.linkedin.com/in/juanarnau7/'>JuanArnau7</a> </p>
+            </footer>
         <br></br>
         </div>
     )    

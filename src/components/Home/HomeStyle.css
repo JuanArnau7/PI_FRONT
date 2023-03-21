@@ -1,5 +1,9 @@
 .Container{
-    background-image: url('../../images/fondoHome2.png');
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5) ,
+        rgba(0, 0, 0,0.5)
+        ), url('../../images/fondoHome2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -8,27 +12,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    /* margin-top: 10px; */
 }
 
 .CardContainer {
-    
+    justify-content: space-around;
     align-items: center;
-    border: solid black;
+    /* border: solid black; */
     display: flex;
     flex-wrap: wrap;
+    
 }
 
-.buttonPag{
-    height: 50px;
-    width: 50px;
-    border-radius: 0.5rem;
-    justify-content: space-around;
-}
+
 .buttonPag:active{
     background-color: antiquewhite;
 }
 .buttonPag:hover{
-    background-color: bisque;
+    background-color: black;
+
 }
 .buttonPagDiv{
     display: inline;
@@ -45,23 +47,38 @@
     justify-content: space-evenly;
 }
 
-.botones{
-    cursor: pointer;
-}
+
 
 
 
 .botones-paginado{
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .boton-Formulario{
-    height: 70px;
+    height: 50px;
     width: 250px;
     border-radius: 30px;
     background-color:  rgb(190, 63, 63);
     color: black;
-    font-size: 20px ;
+    font-size: 18px ;
     cursor: pointer;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.futer{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
 }
