@@ -69,9 +69,6 @@ function Formulario() {
         if (input>100) {
             return 'El HealthScore no puede superar el número 100';
         }
-        // if (input.contains("e")){
-        //     return 'El HealthScore debe ser un numero entre el 0 y el 100'
-        // }
         return ''
     }
     const validacionSteps = (input) =>{
@@ -95,8 +92,9 @@ function Formulario() {
         })
     }
     const handleBorrarDiet = (e) =>{
+        // console.log(e.target.name)
         if (e.target.name === form.diets)
-            
+            console.log("")
             setForm({
                 ...form,
                 diets: form.diets.filter((d)=>d !== e.target.name)
@@ -127,43 +125,32 @@ function Formulario() {
     return (
         <div className="fondo-form">
             <form className="formulario-container" onSubmit={handleClickSubmit}>
-                <label className="titulos-form"><strong>Nombre:</strong>{/*(debe contener solamente letras)*/}</label>
-                <br></br>
-                <input placeholder="ingrese el nombre..." className="formulario-input" type='text' name="name" onChange={e=>handleChange(e)}  ></input>
-                {error && <p>{error.eName}</p>}
+            <h1><u>Formulario de creación</u></h1>
+                
+                <label className="titulos-form"><strong>Name:</strong></label>
+                <input placeholder="enter the name..." className="formulario-input" type='text' name="name" onChange={e=>handleChange(e)}  ></input>
+                {error && <p className="errores">{error.eName}</p>}
 
-                <br></br>
+                <label className="titulos-form"><strong>Summary:</strong></label>
+                <input placeholder="enter the resumen..." className="formulario-input-amplio" type='text' name="summary" onChange={e=>handleChange(e)}></input>
+                {error && <p className="errores">{error.eSummary}</p>}
                 
-                <label className="titulos-form"><strong>Summary:</strong>{/*(debe contener solo letras)*/}</label>
-                <br></br>
-                <input placeholder="ingrese el summary..." className="formulario-input-amplio" type='text' name="summary" onChange={e=>handleChange(e)}></input>
-                {error && <p>{error.eSummary}</p>}
+                <label className="titulos-form"><strong>HealthScore:</strong></label>
+                <input placeholder="enter the healthscore" className="formulario-input" type='number' name="healthScore" onChange={e=>handleChange(e)}></input>
+                {error && <p className="errores">{error.eHealthScore}</p>}
                 
-                <br></br>
-                {/*  */}
-                <label className="titulos-form"><strong>HealthScore:</strong>{/*(solo puede contener numeros menores o iguales que 100)*/} </label>
-                <br></br>
-                <input placeholder="ingrese el HealthScore" className="formulario-input" type='number' name="healthScore" onChange={e=>handleChange(e)}></input>
-                {error && <p>{error.eHealthScore}</p>}
-                
-                <br></br>
-
                 <label className="titulos-form"><strong>Steps:</strong></label>
-                <br></br>
-                <input placeholder="ingrese los steps..." className="formulario-input-amplio" type='text' name="steps" value={form.steps} onChange={e=>handleChange(e)}></input>
-                {error && <p>{error.eSteps}</p>}
-                
-                <br></br>
-                
+                <input placeholder="enter the steps..." className="formulario-input-amplio" type='text' name="steps" value={form.steps} onChange={e=>handleChange(e)}></input>
+                {error && <p className="errores">{error.eSteps}</p>}
+                                
                 <label className="titulos-form"><strong>Diets:</strong></label>
-                <br></br>
                 <select className="select-diets" onChange={handleClickDiet} name="diets">
-                    <option  value={-1}>Seleccione una Dieta</option>
+                    <option  value={-1}>Select a diet</option>
                     {dietGlobal.map(d=>
-                    <option  defaultValue="Seleccione una dieta" key= {d.id} value={d.name} >{d.name}</option>)}
+                    <option  defaultValue="Select a diet" key= {d.id} value={d.name} >{d.name}</option>)}
                 </select>
+                        {form.diets != "" && <h3>The selected diets are:</h3>}
                     <ul>
-                        <h3>Las listas seleccionadas son:</h3>
                         {form.diets.map((v,i)=>
 
                         <li className="lista-diets" key={i}>{v} <button type="button" name={v} onClick={handleBorrarDiet}>x</button></li>
